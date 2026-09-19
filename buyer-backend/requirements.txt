@@ -1,0 +1,31 @@
+# Unpinned on purpose: Python 3.14 needs recent wheels. Pinned older versions
+# have no cp314 wheels, so pip compiles pydantic-core from Rust source and fails.
+
+# --- web / api --------------------------------------------------------------
+fastapi>=0.118
+uvicorn[standard]>=0.37
+pydantic>=2.12
+pydantic-settings>=2.7
+PyJWT>=2.10
+websockets>=14
+
+# --- database ---------------------------------------------------------------
+sqlalchemy[asyncio]>=2.0.36
+asyncpg>=0.30
+
+# --- analysis engines -------------------------------------------------------
+numpy>=2.2
+pandas>=2.2
+
+# --- llm (DeepInfra, OpenAI-compatible) ------------------------------------
+openai>=1.59
+
+# --- search (Bright Data SERP) ---------------------------------------------
+httpx>=0.28
+
+# --- misc -------------------------------------------------------------------
+bcrypt>=4.2
+python-dotenv>=1.0
+
+# --- memory (Cognee Cloud) --------------------------------------------------
+# Hosted over HTTP, so nothing to install - httpx above does the talking.

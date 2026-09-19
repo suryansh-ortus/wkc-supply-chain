@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+.vite/
+.DS_Store
+.idea/
+.vscode/
+sent_log.csv
+*.log
