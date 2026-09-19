@@ -29,3 +29,4 @@ python-dotenv>=1.0
 
 # --- memory (Cognee Cloud) --------------------------------------------------
 # Hosted over HTTP, so nothing to install - httpx above does the talking.
+python-multipart>=0.0.20
